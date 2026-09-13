@@ -6386,6 +6386,91 @@ footer .footer-badges img { object-fit:contain; }
     padding-top:26px;
   }
 }
+
+
+/* v65: tighter, better-aligned account-options section with semantic line icons. */
+.pool-fee-page #options { padding:42px 0; }
+.pool-fee-page .options-card {
+  grid-template-columns:minmax(0,1.18fr) minmax(300px,.72fr);
+  gap:56px;
+  align-items:start;
+}
+.pool-fee-page .options-copy .section-lede { margin-bottom:18px; }
+.pool-fee-page .options-icon-list {
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  column-gap:28px;
+  row-gap:12px;
+}
+.pool-fee-page .options-icon-list li {
+  display:grid;
+  grid-template-columns:24px minmax(0,1fr);
+  gap:10px;
+  align-items:start;
+  padding-left:0;
+  line-height:1.4;
+}
+.pool-fee-page .options-icon-list li::before { content:none!important; }
+.pool-fee-page .option-list-icon {
+  width:20px;
+  height:20px;
+  margin-top:1px;
+  color:#127C95;
+  display:block;
+}
+.pool-fee-page .option-list-icon svg {
+  width:20px;
+  height:20px;
+  display:block;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.7;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.pool-fee-page .options-contact {
+  gap:10px;
+  padding-left:34px;
+  padding-top:2px;
+  border-left:1px solid #D8E0E9;
+}
+.pool-fee-page .options-contact .service-subheading {
+  margin:0 0 6px;
+}
+.pool-fee-page .options-contact-line {
+  grid-template-columns:20px 1fr;
+  gap:10px;
+  align-items:center;
+  line-height:1.3;
+}
+.pool-fee-page .options-hours {
+  margin-top:4px;
+  padding-top:10px;
+  line-height:1.4;
+}
+@media (max-width: 767px) {
+  .pool-fee-page #options { padding:36px 0; }
+  .pool-fee-page .options-icon-list { grid-template-columns:1fr; row-gap:10px; }
+  .pool-fee-page .options-contact {
+    padding-left:0;
+    padding-top:22px;
+    border-left:0;
+    border-top:1px solid #D8E0E9;
+  }
+}
+
+
+/* v66: targeted mobile UX refinements only. */
+@media (max-width:767px) {
+  .pool-fee-page .pool-hero h1 {
+    font-size:2rem;
+    line-height:1.06;
+  }
+  .pool-fee-page .support-panel .btn-pool-primary {
+    width:100%;
+    min-width:0;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -7097,11 +7182,11 @@ footer .footer-badges img { object-fit:contain; }
 <div class="options-copy">
 <h2>If you’re considering your options</h2>
 <p class="section-lede">You can keep your metals in Pool, sell your Pool holdings, exchange them for physical metals, or explore other Kitco storage options, including VaultChain™ and Kitco Allocated Storage. Our Customer Experience team would be happy to walk you through what’s available.</p>
-<ul class="options-simple-list" aria-label="Pool Account options">
-<li>Keep your metals in Pool</li>
-<li>Sell your Pool holdings</li>
-<li>Exchange for physical metals</li>
-<li>Explore other Kitco storage options</li>
+<ul class="options-simple-list options-icon-list" aria-label="Pool Account options">
+<li><span class="option-list-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8l8-4 8 4-8 4-8-4Z"></path><path d="m4 12 8 4 8-4"></path><path d="m4 16 8 4 8-4"></path></svg></span><span>Keep your metals in Pool</span></li>
+<li><span class="option-list-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 7h10"></path><path d="m12 4 3 3-3 3"></path><path d="M19 17H9"></path><path d="m12 14-3 3 3 3"></path></svg></span><span>Sell your Pool holdings</span></li>
+<li><span class="option-list-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="7" cy="7" r="3"></circle><rect x="12" y="4" width="7" height="6" rx="1"></rect><path d="M8 16h9"></path><path d="m14 13 3 3-3 3"></path></svg></span><span>Exchange for physical metals</span></li>
+<li><span class="option-list-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 10h16"></path><path d="M6 10V7l6-3 6 3v3"></path><path d="M6 10v8"></path><path d="M18 10v8"></path><path d="M4 18h16"></path></svg></span><span>Explore other Kitco storage options</span></li>
 </ul>
 </div>
 <div aria-label="Customer Experience contact details" class="options-contact">
@@ -7161,6 +7246,7 @@ footer .footer-badges img { object-fit:contain; }
 <div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">When do the new storage fees start?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">The new storage fees take effect January 1, 2027.</div></div></div>
 <div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">Are Pool transaction fees going away?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">Yes. Starting January 1, 2027, you’ll no longer pay the $14.99 online or $19.99 phone transaction fee when you buy or sell Pool.</div></div></div>
 <div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">Will anything change about how my metals are stored?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">The metals you hold in Pool will continue to be stored in secure depositories and will be fully insured by Kitco.</div></div></div>
+<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">Do I need to do anything before January 1?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">We’ll keep you updated by email before the changes take effect, including when you can choose your preferred payment method in your online account.</div></div></div>
 </div>
 </div>
 <div class="faq-group">
