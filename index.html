@@ -5770,8 +5770,8 @@ body { margin:0; background:#fff; }
 
 /* Hero mirrors the current Kitco dark branding treatment. */
 .pool-fee-page .pool-hero { margin:0; padding:0; color:#fff; background:linear-gradient(180deg,#293343 0%,#040506 100%); overflow:hidden; }
-.pool-fee-page .pool-hero-grid { min-height:220px; display:grid; grid-template-columns:1fr; align-items:center; gap:0; padding-top:34px; padding-bottom:34px; }
-.pool-fee-page .pool-hero h1 { color:#fff; font-size:clamp(2.15rem,3.7vw,3.45rem); line-height:1; max-width:900px; margin:0 0 14px; }
+.pool-fee-page .pool-hero-grid { min-height:220px; display:grid; grid-template-columns:1fr; align-items:center; justify-items:center; gap:0; padding-top:34px; padding-bottom:34px; text-align:center; }
+.pool-fee-page .pool-hero h1 { color:#fff; font-size:clamp(2.15rem,3.7vw,3.45rem); line-height:1; max-width:900px; margin:0 auto; text-align:center; }
 .pool-fee-page .pool-hero h1 .accent { color:#EEBC4E; }
 .pool-fee-page .pool-hero-copy { color:#F0F2F3; max-width:760px; font-size:1rem; line-height:1.38; margin-bottom:8px; }
 .pool-fee-page .pool-hero-copy + .pool-hero-copy { margin-top:5px; }
@@ -6449,10 +6449,18 @@ footer .footer-badges img { object-fit:contain; }
 }
 @media (max-width: 767px) {
   .pool-fee-page #options { padding:36px 0; }
-  .pool-fee-page .options-icon-list { grid-template-columns:1fr; row-gap:10px; }
+  .pool-fee-page .options-card {
+    grid-template-columns:minmax(0,1fr);
+    gap:28px;
+    width:100%;
+    min-width:0;
+  }
+  .pool-fee-page .options-copy,
+  .pool-fee-page .options-contact { min-width:0; width:100%; }
+  .pool-fee-page .options-icon-list { grid-template-columns:1fr; row-gap:12px; }
   .pool-fee-page .options-contact {
     padding-left:0;
-    padding-top:22px;
+    padding-top:24px;
     border-left:0;
     border-top:1px solid #D8E0E9;
   }
