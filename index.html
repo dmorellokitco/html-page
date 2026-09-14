@@ -6340,7 +6340,7 @@ footer .footer-badges img { object-fit:contain; }
 }
 
 
-/* v61: clearer separation and meaningful reassurance icons in the Why / What stays the same section. */
+/* v61: clearer separation and meaningful reassurance icons in the Why / What you can continue to expect section. */
 .pool-fee-page .commitment-column--divided {
   border-left:1px solid #D8E0E9;
   padding-left:44px;
@@ -6478,6 +6478,928 @@ footer .footer-badges img { object-fit:contain; }
   .pool-fee-page .support-panel .btn-pool-primary {
     width:100%;
     min-width:0;
+  }
+}
+
+
+/* v94: compact annual-rate table so it reads as a quick reference, not the main focal point. */
+.pool-fee-page #rates .rate-table-wrap {
+  width:100%;
+  max-width:500px;
+  justify-self:end;
+  margin-top:18px;
+}
+.pool-fee-page .rate-table th { padding:12px 16px; }
+.pool-fee-page .rate-table td { padding:11px 16px; }
+.pool-fee-page .metal-label { gap:10px; }
+@media (max-width:767px) {
+  .pool-fee-page #rates .rate-table-wrap {
+    max-width:none;
+    justify-self:stretch;
+    margin-top:0;
+  }
+}
+
+
+
+/* v104: make the Rachel support card more compact and cleaner. */
+.pool-fee-page .support-grid {
+  grid-template-columns:minmax(0,1fr) minmax(340px,430px);
+  gap:48px;
+}
+.pool-fee-page .support-panel {
+  width:min(100%,430px);
+  justify-self:end;
+  padding:20px 24px 18px;
+  border-radius:10px;
+}
+.pool-fee-page .support-availability {
+  justify-content:flex-start;
+  margin:0 0 12px;
+  padding:6px 12px;
+  font-size:.95rem;
+}
+.pool-fee-page .support-divider {
+  width:100%;
+  margin:0 0 14px;
+  opacity:.8;
+}
+.pool-fee-page .support-content-block {
+  width:100%;
+}
+.pool-fee-page .support-panel-label {
+  margin-bottom:10px;
+}
+.pool-fee-page .support-help-list {
+  gap:8px;
+  margin:0 0 12px;
+}
+.pool-fee-page .support-help-list li {
+  padding-left:24px;
+  font-size:.98rem;
+  line-height:1.35;
+}
+.pool-fee-page .support-help-list li::before {
+  top:0;
+}
+.pool-fee-page .support-note {
+  margin:0 0 12px;
+  padding:10px 12px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:7px;
+  background:rgba(255,255,255,.04);
+  text-align:left;
+  font-size:.9rem;
+  line-height:1.4;
+}
+.pool-fee-page .support-panel .btn-pool-primary {
+  display:flex;
+  width:auto;
+  min-width:146px;
+  max-width:none;
+  min-height:42px;
+  margin:0 auto;
+  padding:0 22px;
+  font-size:1rem;
+}
+@media (max-width:991.98px) {
+  .pool-fee-page .support-grid {
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+  .pool-fee-page .support-panel {
+    width:100%;
+    justify-self:stretch;
+  }
+}
+@media (max-width:767px) {
+  .pool-fee-page .support-panel {
+    padding:20px 18px 18px;
+  }
+  .pool-fee-page .support-note {
+    padding:9px 10px;
+  }
+  .pool-fee-page .support-panel .btn-pool-primary {
+    width:100%;
+    min-height:44px;
+  }
+}
+
+
+
+/* v105: minimal Rachel card — less chrome, tighter hierarchy, fewer nested boxes. */
+.pool-fee-page .support-grid {
+  grid-template-columns:minmax(0,1fr) minmax(320px,400px);
+  gap:44px;
+}
+.pool-fee-page .support-panel {
+  width:min(100%,400px);
+  padding:22px 24px 20px;
+  border-radius:8px;
+}
+.pool-fee-page .support-availability {
+  margin:0 0 14px;
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  font-size:.9rem;
+  font-weight:700;
+}
+.pool-fee-page .support-availability-dot {
+  width:8px;
+  height:8px;
+  flex-basis:8px;
+}
+.pool-fee-page .support-divider {
+  display:none;
+}
+.pool-fee-page .support-panel-label {
+  margin:0 0 12px;
+  font-size:1.05rem;
+}
+.pool-fee-page .support-help-list {
+  margin:0 0 16px;
+  gap:9px;
+}
+.pool-fee-page .support-help-list li {
+  padding-left:20px;
+  font-size:.96rem;
+  line-height:1.4;
+}
+.pool-fee-page .support-help-list li::before {
+  content:"•";
+  color:#EEBC4E;
+  left:2px;
+  top:-1px;
+  font-size:1.15rem;
+  line-height:1.2;
+}
+.pool-fee-page .support-note {
+  margin:0 0 14px;
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  text-align:left;
+  font-size:.9rem;
+  line-height:1.45;
+  color:#E6E9EE;
+}
+.pool-fee-page .support-panel .btn-pool-primary {
+  display:inline-flex;
+  width:auto;
+  min-width:128px;
+  min-height:40px;
+  margin:0;
+  padding:0 20px;
+  font-size:.95rem;
+}
+@media (max-width:991.98px) {
+  .pool-fee-page .support-grid { grid-template-columns:1fr; gap:28px; }
+  .pool-fee-page .support-panel { width:100%; max-width:none; }
+}
+@media (max-width:767px) {
+  .pool-fee-page .support-panel { padding:20px 18px 18px; }
+  .pool-fee-page .support-panel .btn-pool-primary { width:100%; min-height:44px; }
+}
+
+
+
+/* v106: premium, polished Rachel card — compact, refined, and clearly secondary. */
+.pool-fee-page .support-grid {
+  grid-template-columns:minmax(0,1fr) minmax(360px,430px);
+  gap:56px;
+  align-items:center;
+}
+.pool-fee-page .support-panel {
+  position:relative;
+  width:min(100%,430px);
+  justify-self:end;
+  padding:26px 28px 24px;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:12px;
+  background:linear-gradient(145deg,#2D394A 0%,#263244 100%);
+  box-shadow:0 14px 34px rgba(24,34,48,.12);
+  overflow:hidden;
+}
+.pool-fee-page .support-panel::before {
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:3px;
+  background:linear-gradient(90deg,#EEBC4E 0%,#127C95 72%,rgba(18,124,149,0) 100%);
+}
+.pool-fee-page .support-availability {
+  width:max-content;
+  margin:0 0 17px;
+  padding:6px 11px;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:999px;
+  background:rgba(255,255,255,.045);
+  color:#F7F8FA;
+  font-size:.86rem;
+  font-weight:700;
+  letter-spacing:.01em;
+}
+.pool-fee-page .support-availability-dot {
+  width:7px;
+  height:7px;
+  flex-basis:7px;
+  box-shadow:0 0 0 3px rgba(144,178,60,.12);
+}
+.pool-fee-page .support-divider { display:none; }
+.pool-fee-page .support-panel-label {
+  margin:0 0 13px;
+  color:#FFFFFF;
+  font-size:1.08rem;
+  font-weight:700;
+  letter-spacing:-.01em;
+}
+.pool-fee-page .support-help-list {
+  margin:0 0 18px;
+  gap:10px;
+}
+.pool-fee-page .support-help-list li {
+  position:relative;
+  padding-left:27px;
+  color:#F7F8FA;
+  font-size:.96rem;
+  line-height:1.4;
+}
+.pool-fee-page .support-help-list li::before {
+  content:"✓";
+  left:0;
+  top:1px;
+  width:18px;
+  height:18px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:rgba(238,188,78,.10);
+  color:#EEBC4E;
+  font-size:.78rem;
+  font-weight:700;
+  line-height:1;
+}
+.pool-fee-page .support-note {
+  margin:0 0 16px;
+  padding-top:14px;
+  border-top:1px solid rgba(255,255,255,.11);
+  background:transparent;
+  color:#D8DEE6;
+  text-align:left;
+  font-size:.88rem;
+  line-height:1.45;
+}
+.pool-fee-page .support-note strong {
+  color:#EEBC4E;
+  font-weight:700;
+}
+.pool-fee-page .support-panel .btn-pool-primary {
+  display:inline-flex;
+  width:auto;
+  min-width:138px;
+  min-height:42px;
+  margin:0;
+  padding:0 22px;
+  border-radius:6px;
+  background:#127C95;
+  border-color:#127C95;
+  box-shadow:0 6px 16px rgba(18,124,149,.18);
+  color:#fff;
+  font-size:.96rem;
+  font-weight:700;
+}
+.pool-fee-page .support-panel .btn-pool-primary:hover,
+.pool-fee-page .support-panel .btn-pool-primary:focus-visible {
+  background:#0F6F86;
+  border-color:#0F6F86;
+}
+@media (max-width:991.98px) {
+  .pool-fee-page .support-grid {
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+  .pool-fee-page .support-panel {
+    width:100%;
+    max-width:none;
+    justify-self:stretch;
+  }
+}
+@media (max-width:767px) {
+  .pool-fee-page .support-panel {
+    padding:24px 20px 20px;
+    border-radius:10px;
+  }
+  .pool-fee-page .support-panel .btn-pool-primary {
+    width:100%;
+    min-height:44px;
+    justify-content:center;
+  }
+}
+
+
+
+/* v107: make the Rachel starter prompt unmistakable and center the CTA. */
+.pool-fee-page .support-note {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:4px 0 16px;
+  padding:11px 13px;
+  border:1px solid rgba(18,124,149,.18);
+  border-radius:8px;
+  background:#EAF6F8;
+  color:#2C3642;
+  text-align:left;
+  font-size:.9rem;
+  line-height:1.35;
+}
+.pool-fee-page .support-note-icon {
+  width:22px;
+  height:22px;
+  flex:0 0 22px;
+  display:grid;
+  place-items:center;
+  color:#127C95;
+}
+.pool-fee-page .support-note-icon svg {
+  width:20px;
+  height:20px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.7;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.pool-fee-page .support-note strong {
+  color:#003871;
+  font-weight:700;
+}
+.pool-fee-page .support-cta-wrap {
+  display:flex;
+  justify-content:center;
+  width:100%;
+}
+.pool-fee-page .support-panel .btn-pool-primary {
+  margin:0 auto;
+  justify-content:center;
+}
+@media (max-width:767px) {
+  .pool-fee-page .support-note {
+    margin-top:2px;
+    padding:10px 12px;
+  }
+}
+
+
+
+/* v108: align Rachel card to the established Kitco page palette and refine 24/7 status. */
+.pool-fee-page .support-panel {
+  background:#293343;
+  border:1px solid #4D5C6F;
+  box-shadow:0 10px 26px rgba(41,51,67,.12);
+}
+.pool-fee-page .support-panel::before {
+  height:2px;
+  background:#127C95;
+}
+.pool-fee-page .support-availability {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  width:max-content;
+  margin:0 0 16px;
+  padding:7px 12px;
+  border:1px solid #59667A;
+  border-radius:999px;
+  background:#252F3D;
+  color:#FFFFFF;
+  font-size:.82rem;
+  font-weight:700;
+  line-height:1;
+  letter-spacing:.01em;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.03);
+}
+.pool-fee-page .support-availability-dot {
+  width:8px;
+  height:8px;
+  flex:0 0 8px;
+  border-radius:50%;
+  background:#90B23C;
+  box-shadow:0 0 0 3px rgba(144,178,60,.12);
+}
+.pool-fee-page .support-panel-label,
+.pool-fee-page .support-help-list li {
+  color:#FFFFFF;
+}
+.pool-fee-page .support-help-list li::before {
+  background:rgba(238,188,78,.10);
+  color:#EEBC4E;
+}
+.pool-fee-page .support-note {
+  border:1px solid #D8E0E9;
+  background:#F4F4F7;
+  color:#2C3642;
+  box-shadow:none;
+}
+.pool-fee-page .support-note-icon {
+  color:#127C95;
+}
+.pool-fee-page .support-note strong {
+  color:#003871;
+}
+.pool-fee-page .support-panel .btn-pool-primary {
+  background:#127C95;
+  border-color:#127C95;
+  box-shadow:none;
+}
+.pool-fee-page .support-panel .btn-pool-primary:hover,
+.pool-fee-page .support-panel .btn-pool-primary:focus-visible {
+  background:#0F6F86;
+  border-color:#0F6F86;
+}
+
+
+
+/* v110: horizontal Rachel service panel, integrated with the page rather than a promotional card. */
+.pool-fee-page .support-section--horizontal {
+  padding:48px 0;
+  background:#FFFFFF;
+  border-top:1px solid #F0F2F3!important;
+  border-bottom:1px solid #F0F2F3;
+}
+.pool-fee-page .rachel-service-panel {
+  display:grid;
+  grid-template-columns:minmax(0,1.15fr) minmax(270px,.8fr) minmax(300px,.9fr);
+  align-items:center;
+  gap:28px;
+  padding:26px 30px;
+  background:#F8F9FA;
+  border:1px solid #D8E0E9;
+  border-left:4px solid #127C95;
+  border-radius:10px;
+}
+.pool-fee-page .rachel-service-main { min-width:0; }
+.pool-fee-page .rachel-service-heading {
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:10px;
+}
+.pool-fee-page .rachel-service-heading .rachel-current-icon {
+  width:58px;
+  flex:0 0 58px;
+}
+.pool-fee-page .rachel-service-heading .section-kicker {
+  margin-bottom:4px;
+  color:#127C95;
+}
+.pool-fee-page .rachel-service-heading h2 {
+  margin:0;
+  font-size:clamp(1.7rem,2.2vw,2.2rem);
+}
+.pool-fee-page .rachel-service-main p {
+  margin:0;
+  max-width:650px;
+  color:#555555;
+  font-size:1rem;
+  line-height:1.5;
+}
+.pool-fee-page .rachel-service-help {
+  padding-left:28px;
+  border-left:1px solid #D8E0E9;
+}
+.pool-fee-page .rachel-service-status {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-bottom:12px;
+  color:#293343;
+  font-weight:700;
+  font-size:.95rem;
+}
+.pool-fee-page .rachel-service-dot {
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  background:#90B23C;
+  box-shadow:0 0 0 3px rgba(144,178,60,.12);
+}
+.pool-fee-page .rachel-service-topics {
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.pool-fee-page .rachel-service-topics span {
+  display:inline-flex;
+  align-items:center;
+  min-height:30px;
+  padding:5px 10px;
+  border:1px solid #D8E0E9;
+  border-radius:999px;
+  background:#FFFFFF;
+  color:#2C3642;
+  font-size:.86rem;
+  line-height:1.25;
+}
+.pool-fee-page .rachel-service-action {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:12px;
+}
+.pool-fee-page .rachel-service-prompt {
+  display:flex;
+  align-items:flex-start;
+  gap:9px;
+  width:100%;
+  max-width:320px;
+  padding:11px 13px;
+  border:1px solid #D8E0E9;
+  border-radius:8px;
+  background:#FFFFFF;
+  color:#293343;
+  font-size:.92rem;
+  line-height:1.4;
+}
+.pool-fee-page .rachel-service-prompt strong { color:#003871; }
+.pool-fee-page .rachel-service-prompt-icon {
+  display:grid;
+  place-items:center;
+  width:20px;
+  height:20px;
+  flex:0 0 20px;
+  margin-top:1px;
+  border-radius:50%;
+  background:#EAF4F7;
+  color:#127C95;
+  font-size:.8rem;
+  font-weight:700;
+  font-family:Arial,Helvetica,sans-serif;
+}
+.pool-fee-page .rachel-service-action .btn-pool-primary {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:auto;
+  min-width:150px;
+  min-height:44px;
+  margin:0;
+  padding:10px 22px;
+  background:#127C95;
+  border-color:#127C95;
+  color:#FFFFFF;
+  font-weight:700;
+}
+@media (max-width:1099px) {
+  .pool-fee-page .rachel-service-panel {
+    grid-template-columns:minmax(0,1fr) minmax(270px,.9fr);
+  }
+  .pool-fee-page .rachel-service-action {
+    grid-column:1/-1;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:18px;
+    border-top:1px solid #D8E0E9;
+  }
+  .pool-fee-page .rachel-service-prompt { max-width:520px; }
+}
+@media (max-width:767px) {
+  .pool-fee-page .support-section--horizontal { padding:40px 0; }
+  .pool-fee-page .rachel-service-panel {
+    grid-template-columns:1fr;
+    gap:22px;
+    padding:24px 20px;
+    border-left-width:3px;
+  }
+  .pool-fee-page .rachel-service-heading { align-items:flex-start; }
+  .pool-fee-page .rachel-service-heading .rachel-current-icon {
+    width:52px;
+    flex-basis:52px;
+  }
+  .pool-fee-page .rachel-service-help {
+    padding-left:0;
+    padding-top:18px;
+    border-left:0;
+    border-top:1px solid #D8E0E9;
+  }
+  .pool-fee-page .rachel-service-action {
+    grid-column:auto;
+    flex-direction:column;
+    align-items:stretch;
+    padding-top:18px;
+  }
+  .pool-fee-page .rachel-service-prompt { max-width:none; }
+  .pool-fee-page .rachel-service-action .btn-pool-primary { width:100%; }
+}
+
+
+
+/* v111: connect the Rachel content and CTA into one unified service module. */
+.pool-fee-page .rachel-service-panel--connected {
+  grid-template-columns:minmax(0,1.35fr) minmax(330px,.85fr);
+  gap:0;
+  padding:0;
+  overflow:hidden;
+  background:#FFFFFF;
+  border:1px solid #D8E0E9;
+  border-left:4px solid #127C95;
+  border-radius:10px;
+}
+.pool-fee-page .rachel-service-panel--connected .rachel-service-main {
+  padding:28px 32px 26px;
+}
+.pool-fee-page .rachel-service-help--connected {
+  align-self:stretch;
+  padding:26px 30px;
+  border-left:1px solid #E4E8EC;
+  background:#F8F9FA;
+}
+.pool-fee-page .rachel-service-help--connected .rachel-service-status {
+  margin-bottom:14px;
+}
+.pool-fee-page .rachel-service-help-title {
+  margin:0 0 10px;
+  color:#293343;
+  font-size:.92rem;
+  font-weight:700;
+}
+.pool-fee-page .rachel-service-topic-list {
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:grid;
+  gap:8px;
+}
+.pool-fee-page .rachel-service-topic-list li {
+  position:relative;
+  padding-left:21px;
+  color:#555555;
+  font-size:.9rem;
+  line-height:1.35;
+}
+.pool-fee-page .rachel-service-topic-list li::before {
+  content:"✓";
+  position:absolute;
+  left:0;
+  top:0;
+  color:#127C95;
+  font-weight:700;
+}
+.pool-fee-page .rachel-service-action--connected {
+  grid-column:1/-1;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+  gap:20px;
+  padding:15px 24px;
+  border-top:1px solid #D8E0E9;
+  background:#EEF6F8;
+}
+.pool-fee-page .rachel-service-prompt--connected {
+  width:auto;
+  max-width:none;
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  color:#293343;
+  font-size:.95rem;
+  line-height:1.4;
+}
+.pool-fee-page .rachel-service-prompt-icon--bulb {
+  width:24px;
+  height:24px;
+  flex:0 0 24px;
+  margin:0;
+  border-radius:50%;
+  background:#FFFFFF;
+  color:#127C95;
+  border:1px solid #D8E0E9;
+}
+.pool-fee-page .rachel-service-prompt-icon--bulb svg {
+  width:14px;
+  height:14px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.pool-fee-page .rachel-service-action--connected .btn-pool-primary {
+  min-width:150px;
+  min-height:42px;
+  flex:0 0 auto;
+}
+@media (max-width:899px) {
+  .pool-fee-page .rachel-service-panel--connected {
+    grid-template-columns:1fr;
+  }
+  .pool-fee-page .rachel-service-panel--connected .rachel-service-main {
+    padding:24px 24px 20px;
+  }
+  .pool-fee-page .rachel-service-help--connected {
+    padding:20px 24px;
+    border-left:0;
+    border-top:1px solid #E4E8EC;
+  }
+  .pool-fee-page .rachel-service-action--connected {
+    grid-column:auto;
+  }
+}
+@media (max-width:600px) {
+  .pool-fee-page .rachel-service-action--connected {
+    flex-direction:column;
+    align-items:stretch;
+    gap:12px;
+    padding:16px 18px 18px;
+  }
+  .pool-fee-page .rachel-service-prompt--connected {
+    justify-content:center;
+    text-align:left;
+  }
+  .pool-fee-page .rachel-service-action--connected .btn-pool-primary {
+    width:100%;
+  }
+}
+
+
+
+/* v112: design + color audit alignment for the connected Rachel module. */
+.pool-fee-page .rachel-service-panel--connected {
+  background:#FFFFFF;
+  border-color:#D8E0E9;
+  border-left-color:#127C95;
+  border-radius:8px;
+}
+.pool-fee-page .rachel-service-help--connected {
+  background:#F8F9FA;
+  border-left-color:#D8E0E9;
+}
+.pool-fee-page .rachel-service-status {
+  display:inline-flex;
+  width:max-content;
+  align-items:center;
+  gap:8px;
+  margin-bottom:16px;
+  padding:6px 10px;
+  border:1px solid #D8E0E9;
+  border-radius:999px;
+  background:#FFFFFF;
+  color:#293343;
+  font-size:.9rem;
+  font-weight:700;
+  line-height:1.2;
+}
+.pool-fee-page .rachel-service-dot {
+  width:8px;
+  height:8px;
+  flex:0 0 8px;
+  background:#00884A;
+  box-shadow:0 0 0 3px rgba(0,136,74,.10);
+}
+.pool-fee-page .rachel-service-help-title {
+  color:#293343;
+}
+.pool-fee-page .rachel-service-topic-list li {
+  color:#555555;
+}
+.pool-fee-page .rachel-service-topic-list li::before {
+  color:#127C95;
+}
+.pool-fee-page .rachel-service-action--connected {
+  border-top-color:#D8E0E9;
+  background:#F4F4F7;
+}
+.pool-fee-page .rachel-service-prompt--connected {
+  color:#293343;
+}
+.pool-fee-page .rachel-service-prompt--connected strong {
+  color:#003871;
+}
+.pool-fee-page .rachel-service-prompt-icon--bulb {
+  background:#FFFFFF;
+  color:#127C95;
+  border-color:#D8E0E9;
+}
+.pool-fee-page .rachel-service-action--connected .btn-pool-primary {
+  background:#003871;
+  border-color:#003871;
+  color:#FFFFFF;
+}
+.pool-fee-page .rachel-service-action--connected .btn-pool-primary:hover,
+.pool-fee-page .rachel-service-action--connected .btn-pool-primary:focus-visible {
+  background:#002C5C;
+  border-color:#002C5C;
+  color:#FFFFFF;
+}
+@media (max-width:899px) {
+  .pool-fee-page .rachel-service-help--connected {
+    border-top-color:#D8E0E9;
+  }
+}
+
+
+/* v113: simplify Rachel to one connected two-part service panel. */
+.pool-fee-page .rachel-service-panel--connected {
+  grid-template-columns:minmax(0,1.45fr) minmax(310px,.72fr);
+  gap:0;
+  align-items:stretch;
+  padding:0;
+  overflow:hidden;
+  background:#FFFFFF;
+  border:1px solid #D8E0E9;
+  border-left:4px solid #127C95;
+  border-radius:8px;
+  box-shadow:0 1px 3px rgba(41,51,67,.04);
+}
+.pool-fee-page .rachel-service-panel--connected .rachel-service-main {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:28px 32px;
+}
+.pool-fee-page .rachel-service-heading {
+  margin-bottom:10px;
+}
+.pool-fee-page .rachel-service-heading .rachel-current-icon {
+  width:54px;
+  flex-basis:54px;
+}
+.pool-fee-page .rachel-service-main p {
+  max-width:680px;
+}
+.pool-fee-page .rachel-service-action--clean {
+  grid-column:auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+  min-width:0;
+  padding:28px 30px;
+  border-top:0;
+  border-left:1px solid #D8E0E9;
+  background:#F8F9FA;
+  text-align:center;
+}
+.pool-fee-page .rachel-clean-prompt {
+  max-width:290px;
+  color:#293343;
+  font-size:1rem;
+  line-height:1.45;
+}
+.pool-fee-page .rachel-clean-prompt strong {
+  color:#127C95;
+  font-weight:700;
+}
+.pool-fee-page .rachel-service-action--clean .btn-pool-primary {
+  width:auto;
+  min-width:150px;
+  min-height:44px;
+  margin:0;
+  padding:11px 24px;
+  background:#003871;
+  border-color:#003871;
+  color:#FFFFFF;
+  box-shadow:none;
+}
+.pool-fee-page .rachel-service-action--clean .btn-pool-primary:hover,
+.pool-fee-page .rachel-service-action--clean .btn-pool-primary:focus-visible {
+  background:#002C5C;
+  border-color:#002C5C;
+}
+@media (max-width:899px) {
+  .pool-fee-page .rachel-service-panel--connected {
+    grid-template-columns:1fr;
+  }
+  .pool-fee-page .rachel-service-panel--connected .rachel-service-main {
+    padding:24px;
+  }
+  .pool-fee-page .rachel-service-action--clean {
+    border-left:0;
+    border-top:1px solid #D8E0E9;
+    padding:22px 24px 24px;
+  }
+}
+@media (max-width:600px) {
+  .pool-fee-page .rachel-service-action--clean {
+    align-items:stretch;
+    text-align:left;
+    gap:14px;
+    padding:20px;
+  }
+  .pool-fee-page .rachel-clean-prompt {
+    max-width:none;
+  }
+  .pool-fee-page .rachel-service-action--clean .btn-pool-primary {
+    width:100%;
   }
 }
 
@@ -7061,7 +7983,7 @@ footer .footer-badges img { object-fit:contain; }
 <div class="pool-wrap">
 <div class="section-kicker">Effective January 1, 2027</div>
 <h2>What’s changing</h2>
-<p class="section-lede">Two important changes are coming to Kitco Pool.</p>
+<p class="section-lede">Two important changes are coming to Kitco Pool - Metal Accounts.</p>
 <div class="change-grid">
 <article class="change-card">
 <div aria-hidden="true" class="change-card-icon change-card-icon--storage">
@@ -7072,7 +7994,7 @@ footer .footer-badges img { object-fit:contain; }
 </div>
 <div>
 <h3>A new annual storage fee</h3>
-<p>We’re introducing an annual storage fee based on the value of the metals you hold in Pool.</p>
+<p>We’re introducing an annual storage fee based on the value of the metals you hold in your Pool Metal Account.</p>
 <p>There's a $15 annual minimum, and it counts toward your fee for the year. It's not an extra charge.</p>
 </div>
 </article>
@@ -7087,7 +8009,7 @@ footer .footer-badges img { object-fit:contain; }
 </div>
 <div>
 <h3>We’re saying goodbye to transaction fees</h3>
-<p>You’ll no longer pay transaction fees when you buy or sell metals in Pool.</p>
+<p>You’ll no longer pay transaction fees when you buy or sell metals through your Pool Metal Account.</p>
 <p>So you can trade more often without paying transaction fees each time.</p>
 </div>
 </article>
@@ -7102,15 +8024,15 @@ footer .footer-badges img { object-fit:contain; }
 <p class="section-lede">For many years, Kitco has covered the cost of securely storing metals held in Pool without charging a separate storage fee. As those costs have increased over time, we’re introducing a storage fee based on the metals you hold and their value.</p>
 </div>
 <div class="commitment-column commitment-column--divided">
-<h3 class="service-subheading">What stays the same</h3>
+<h3 class="service-subheading">What you can continue to expect</h3>
 <ul class="service-icon-list">
 <li>
 <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m15 8 4 4-4 4"></path><path d="M9 8 5 12l4 4"></path></svg></span>
-<div><strong>The Pool experience stays the same</strong><br/>You can continue to buy, sell and hold metals in Pool just as you do today.</div>
+<div><strong>Same great Pool Metal Account experience</strong><br/>You can continue to buy, sell and hold metals in Pool just as you do today.</div>
 </li>
 <li>
 <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v5l3 2"></path></svg></span>
-<div><strong>24/7 online trading</strong><br/>Buy and sell metals in Pool online whenever it works for you.</div>
+<div><strong>24/7 online trading</strong><br/>Buy and sell metals in Pool online, 24/7.</div>
 </li>
 <li>
 <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8h16"></path><path d="M7 5 4 8l3 3"></path><path d="M20 16H4"></path><path d="m17 13 3 3-3 3"></path></svg></span>
@@ -7217,29 +8139,25 @@ footer .footer-badges img { object-fit:contain; }
 </div>
 </div>
 </section>
-<section class="pool-section support-section" id="support">
-<div class="pool-wrap support-grid">
-<div class="support-intro">
-<div class="rachel-brand">
-<img class="rachel-current-icon" src="data:image/png;base64,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" alt="Rachel AI assistant chat icon"/>
-<div class="rachel-brand-copy"><div class="section-kicker">Ask our AI assistant</div><h2>Get an answer in seconds</h2></div>
-</div>
-<p>Rachel is our AI assistant. She’s available anytime and can answer questions about the new Pool storage fees, including how your fee is calculated and what the $15 annual minimum means for your account.</p>
+<section class="pool-section support-section support-section--horizontal" id="support">
+<div class="pool-wrap">
+<div class="rachel-service-panel rachel-service-panel--connected">
+  <div class="rachel-service-main">
+    <div class="rachel-service-heading">
+      <img class="rachel-current-icon" src="data:image/png;base64,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" alt="Rachel AI assistant chat icon"/>
+      <div>
+        <div class="section-kicker">Ask our AI assistant</div>
+        <h2>Get an answer in seconds</h2>
+      </div>
+    </div>
+    <p>Rachel is available 24/7 to answer questions about the new Pool storage fees, including how your fee is calculated, what the $15 annual minimum means, and more.</p>
+  </div>
 
+  <div class="rachel-service-action rachel-service-action--clean">
+    <div class="rachel-clean-prompt">Ask about <strong>Pool storage fees</strong> to get started.</div>
+    <a class="btn btn-pool-primary" href="javascript:void(0)">Let’s Chat</a>
+  </div>
 </div>
-<div class="support-panel">
-<div class="support-availability"><span aria-hidden="true" class="support-availability-dot"></span>Available 24/7</div>
-<div class="support-divider"></div>
-<div class="support-content-block">
-<div class="support-panel-label">Rachel can help with</div>
-<ul class="support-help-list">
-<li>What’s changing with Pool storage fees</li>
-<li>How your fee is calculated each day</li>
-<li>What the $15 annual minimum means</li>
-</ul>
-</div>
-<p class="support-note">Ask about <strong>Pool storage fees</strong> to get started.</p>
-<a class="btn btn-pool-primary" href="javascript:void(0)">Let’s Chat</a>
 </div>
 </div>
 </section>
@@ -7293,7 +8211,7 @@ footer .footer-badges img { object-fit:contain; }
 </div>
 </div>
 
-<!-- TODO before launch: confirm partial-year/new-account minimum treatment if this transition page will ever be reused for new customers. --></div>
+<!-- Transition page for existing customers; new-account/partial-year treatment intentionally omitted. --></div>
 </div>
 </section>
 </main>
