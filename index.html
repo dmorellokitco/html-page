@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 
 <html lang="en">
 <head><base href="https://online.kitco.com/"/>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport"/>
-<title>A new Pool Account Service Fee | Kitco</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>A new Pool Account service fee | Kitco</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
 <style>
 @charset "UTF-8";
@@ -8276,7 +8277,6 @@ footer .footer-badges img { object-fit:contain; }
 }
 
 </style>
-
 <style>
 /* v179: Tangerine-inspired announcement hierarchy using Kitco's existing typography and palette. */
 .pool-fee-page .pool-hero--announcement {
@@ -8609,7 +8609,6 @@ footer .footer-badges img { object-fit:contain; }
 }
 
 </style>
-
 <style>
 /* v185: clean centered copy-only hero */
 .pool-fee-page .pool-hero.pool-hero--centered .pool-hero-inner {
@@ -8722,7 +8721,6 @@ footer .footer-badges img { object-fit:contain; }
   }
 }
 </style>
-
 <style>
 /* v190: Tangerine-inspired fee explanation: short, conversational paragraphs with a quiet examples label. */
 .pool-fee-page .fee-example-copy {
@@ -8756,7 +8754,6 @@ footer .footer-badges img { object-fit:contain; }
   }
 }
 </style>
-
 <style>
 /* v191: open, Tangerine-inspired annual fee examples. Reduce nested-card density and make the rate table the visual anchor. */
 .pool-fee-page #rates .fee-example-panel {
@@ -8861,15 +8858,12 @@ footer .footer-badges img { object-fit:contain; }
   }
 }
 </style>
-
-
 <style>
 /* v192: align the examples currency note with the page's established secondary text colour. */
 .pool-fee-page #rates .fee-example-currency-note {
   color:#555555;
 }
 </style>
-
 <style>
 /* v194: standard paragraph rhythm. Separate adjacent paragraphs with a full line of visual breathing room. */
 .pool-fee-page p + p {
@@ -8880,7 +8874,6 @@ footer .footer-badges img { object-fit:contain; }
   margin-top:1rem;
 }
 </style>
-
 <style>
 /* v196: mobile QA fixes. */
 /* Keep the USD/CAD note inline and box-free within valid document structure. */
@@ -8923,7 +8916,6 @@ footer .footer-badges img { object-fit:contain; }
   }
 }
 </style>
-
 <style>
 /* v197: final typography refinements from the page-wide font audit. */
 /* Keep the announcement message primary and the effective date clearly secondary. */
@@ -8957,7 +8949,6 @@ footer .footer-badges img { object-fit:contain; }
   }
 }
 </style>
-
 <style>
 /* v198: subtle desktop optical alignment between the primary H2 and support column. */
 @media (min-width:1000px) {
@@ -8966,7 +8957,6 @@ footer .footer-badges img { object-fit:contain; }
   }
 }
 </style>
-
 <style>
 /* v199: compact desktop option rows so both columns finish on the same visual baseline. */
 @media (min-width:1000px) {
@@ -8992,7 +8982,6 @@ footer .footer-badges img { object-fit:contain; }
   }
 }
 </style>
-
 <style>
 /* v200: align the final option row with the bottom of the desktop support column; keep the fee note below that baseline. */
 @media (min-width:1000px) {
@@ -9023,7 +9012,6 @@ footer .footer-badges img { object-fit:contain; }
   }
 }
 </style>
-
 <style>
 /* v201: balance the desktop options column. Keep the first option close to the intro, distribute remaining space between option rows, and preserve the shared bottom baseline with the support column. */
 @media (min-width:1000px) {
@@ -9037,7 +9025,6 @@ footer .footer-badges img { object-fit:contain; }
   }
 }
 </style>
-
 <style>
 /* v202: bring desktop option rows closer to the v198 proportions while preserving the shared bottom baseline. */
 @media (min-width:1000px) {
@@ -9057,7 +9044,6 @@ footer .footer-badges img { object-fit:contain; }
   }
 }
 </style>
-
 <style>
 /* v209: give the standalone annual-fee examples more room while keeping them left-aligned. */
 @media (min-width:768px) {
@@ -9070,7 +9056,372 @@ footer .footer-badges img { object-fit:contain; }
   }
 }
 </style>
+<style>
+/* v214: on mobile, place the fee note immediately below the option list before support cards. */
+@media (max-width:999px) {
+  .pool-fee-page .next-step-grid {
+    grid-template-areas:
+      "main"
+      "note"
+      "support";
+  }
+  .pool-fee-page .next-step-main { grid-area:main; }
+  .pool-fee-page .next-step-support { grid-area:support; }
+  .pool-fee-page .next-step-grid > .next-step-fee-note {
+    grid-area:note;
+    margin:10px 0 0;
+    max-width:none;
+  }
+}
+</style>
+<style>
+/* v224: put the effective date first in the hero while preserving the existing hierarchy. */
+.pool-fee-page .pool-hero.pool-hero--centered .pool-hero-date {
+  margin:0 auto 10px;
+}
+.pool-fee-page .pool-hero.pool-hero--centered .pool-hero-title {
+  margin:0 auto;
+}
+</style>
+<style>
+/* v225: quieter date-first hero hierarchy and streamlined intro copy. */
+.pool-fee-page .pool-hero.pool-hero--centered .pool-hero-date {
+  margin:0 auto 14px;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:clamp(1.25rem,1.6vw,1.5rem);
+  line-height:1.2;
+  font-weight:700;
+  letter-spacing:.01em;
+}
+@media (max-width:767.98px) {
+  .pool-fee-page .pool-hero.pool-hero--centered .pool-hero-date {
+    font-size:1.1rem;
+    margin-bottom:10px;
+  }
+}
+</style>
+<style>
+/* v227: fee-first opening. The hero announces the change; the brief white intro acknowledges the customer once before details begin. */
+.pool-fee-page .pool-hero--centered .pool-hero-title {
+  max-width:980px;
+  margin:0 auto;
+}
+.pool-fee-page .pool-hero-empathy {
+  display:block;
+  margin-top:12px;
+  color:#F0F2F3;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:clamp(1.05rem,1.4vw,1.25rem);
+  line-height:1.4;
+  font-weight:400;
+}
+.pool-fee-page .pool-hero--centered .pool-hero-copy {
+  max-width:860px;
+  margin:24px auto 0;
+  color:#F0F2F3;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:clamp(1rem,1.25vw,1.15rem);
+  line-height:1.5;
+}
+.pool-fee-page .pool-hero-effective-date {
+  color:#EEBC4E;
+  font-weight:700;
+}
+.pool-fee-page .pool-intro-section--brief {
+  padding:34px 0 8px;
+}
+.pool-fee-page .pool-intro-section--brief .section-lede {
+  max-width:900px;
+  font-size:1.08rem;
+  line-height:1.55;
+}
+@media (max-width:767.98px) {
+  .pool-fee-page .pool-hero--centered .pool-hero-inner {
+    padding-top:38px;
+    padding-bottom:38px;
+  }
+  .pool-fee-page .pool-hero-empathy {
+    margin-top:10px;
+    font-size:1rem;
+  }
+  .pool-fee-page .pool-hero--centered .pool-hero-copy {
+    margin-top:20px;
+    font-size:1rem;
+  }
+  .pool-fee-page .pool-intro-section--brief {
+    padding:28px 0 6px;
+  }
+  .pool-fee-page .pool-intro-section--brief .section-lede {
+    font-size:1rem;
+  }
+}
+</style>
+<style>
+/* v229: make FAQ categories collapsible. Questions inside each open category remain individually collapsible. */
+.pool-fee-page .faq-category-header { padding:0; }
+.pool-fee-page .faq-category-header .faq-group-toggle {
+  display:block;
+  width:100%;
+  padding:18px 56px 18px 20px;
+  background:#F8F9FA;
+  color:#293343;
+  text-align:left;
+  font-size:1.08rem;
+  font-weight:700;
+  line-height:1.35;
+}
+.pool-fee-page .faq-group-panel.collapse { padding:0 20px 8px; }
+@media (max-width:767.98px) {
+  .pool-fee-page .faq-category-header .faq-group-toggle { padding:16px 50px 16px 16px; font-size:1.05rem; }
+  .pool-fee-page .faq-group-panel.collapse { padding:0 16px 6px; }
+}
+</style>
 
+<style>
+/* v230: native HTML disclosure controls for the Pool FAQ. No JavaScript dependency. */
+.pool-fee-page #faqs .faq-native-group,
+.pool-fee-page #faqs .faq-native-item {
+  margin:0;
+}
+.pool-fee-page #faqs .faq-native-group {
+  border:1px solid #F0F2F3;
+  border-radius:8px;
+  margin-bottom:16px;
+  overflow:hidden;
+  background:#fff;
+}
+.pool-fee-page #faqs summary {
+  list-style:none;
+  -webkit-tap-highlight-color:transparent;
+}
+.pool-fee-page #faqs summary::-webkit-details-marker { display:none; }
+.pool-fee-page #faqs .faq-native-category-summary,
+.pool-fee-page #faqs .faq-native-question {
+  position:relative;
+  width:100%;
+  cursor:pointer;
+  color:#293343;
+  text-align:left;
+  padding-right:56px;
+  user-select:none;
+}
+.pool-fee-page #faqs .faq-native-category-summary {
+  padding:18px 56px 18px 20px;
+  background:#F8F9FA;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:1.08rem;
+  font-weight:700;
+}
+.pool-fee-page #faqs .faq-native-question {
+  padding:17px 56px 17px 0;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:1rem;
+  line-height:1.35;
+  font-weight:700;
+}
+.pool-fee-page #faqs .faq-native-category-summary::after,
+.pool-fee-page #faqs .faq-native-question::after {
+  content:'+';
+  position:absolute;
+  right:18px;
+  top:50%;
+  transform:translateY(-50%);
+  width:24px;
+  height:24px;
+  display:grid;
+  place-items:center;
+  color:#293343;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:1.35rem;
+  font-weight:400;
+  line-height:1;
+}
+.pool-fee-page #faqs .faq-native-group[open] > .faq-native-category-summary::after,
+.pool-fee-page #faqs .faq-native-item[open] > .faq-native-question::after {
+  content:'−';
+}
+.pool-fee-page #faqs .faq-native-group[open] > .faq-native-category-summary {
+  border-bottom:1px solid #F0F2F3;
+}
+.pool-fee-page #faqs .faq-native-group-panel {
+  padding:0 20px 8px;
+}
+.pool-fee-page #faqs .faq-native-item {
+  border-top:1px solid #F0F2F3;
+}
+.pool-fee-page #faqs .faq-native-item:first-child { border-top:0; }
+.pool-fee-page #faqs .faq-native-answer {
+  padding:0 58px 20px 0;
+  color:#555;
+  font-size:1rem;
+  line-height:1.5;
+}
+.pool-fee-page #faqs .faq-native-answer a {
+  color:#0680CD;
+  text-decoration:underline;
+}
+.pool-fee-page #faqs .faq-native-category-summary:focus-visible,
+.pool-fee-page #faqs .faq-native-question:focus-visible {
+  outline:2px solid #0680CD;
+  outline-offset:-2px;
+}
+@media (max-width:767.98px) {
+  .pool-fee-page #faqs .faq-native-category-summary {
+    padding:16px 50px 16px 16px;
+    font-size:1.05rem;
+  }
+  .pool-fee-page #faqs .faq-native-group-panel { padding:0 16px 6px; }
+  .pool-fee-page #faqs .faq-native-question {
+    padding:16px 48px 16px 0;
+    font-size:1rem;
+  }
+  .pool-fee-page #faqs .faq-native-answer {
+    padding:0 42px 18px 0;
+  }
+  .pool-fee-page #faqs .faq-native-category-summary::after,
+  .pool-fee-page #faqs .faq-native-question::after { right:14px; }
+}
+</style>
+<style>
+/* Opening banner matched to the supplied reference. */
+.pool-fee-page .pool-hero.pool-hero--centered {
+  background:radial-gradient(ellipse at 80% 58%,rgba(133,111,61,.20),transparent 40%),linear-gradient(160deg,#0e1319 0%,#202833 52%,#2c3443 100%);
+  border-bottom:1px solid #b89239;
+}
+.pool-fee-page .pool-hero.pool-hero--centered .pool-hero-inner {
+  min-height:305px; padding:48px 30px 50px; align-items:flex-start;
+  justify-content:flex-start; text-align:left; gap:0;
+}
+.pool-fee-page .pool-hero.pool-hero--centered .pool-hero-title {
+  width:100%; max-width:none; margin:0; padding:0;
+  border-bottom:0;
+  font-family:"bodoni",Georgia,serif; font-size:clamp(32px,3.6vw,50px);
+  line-height:1.2; font-weight:400; text-align:left; order:0;
+}
+.pool-fee-page .pool-hero.pool-hero--centered .pool-hero-copy {
+  width:100%; max-width:none; margin:30px 0 0; padding:0;
+  font-family:Arial,Helvetica,sans-serif; font-size:24px; line-height:1.5;
+  color:#fff; text-align:left; order:2;
+}
+.pool-fee-page .pool-hero.pool-hero--centered .pool-hero-empathy {
+  width:100%; margin:18px 0 0; padding:0 0 30px; border-bottom:1px solid rgba(255,255,255,.18); font-family:Arial,Helvetica,sans-serif;
+  font-size:23px; line-height:1.4; font-weight:400; color:#b9bec7; order:1;
+}
+.pool-fee-page .pool-hero-effective-date { color:#f4bd35; font-weight:700; }
+@media(max-width:767.98px) {
+  .pool-fee-page .pool-hero.pool-hero--centered .pool-hero-inner { min-height:0; padding:32px 20px; }
+  .pool-fee-page .pool-hero.pool-hero--centered .pool-hero-title { padding-bottom:0; }
+  .pool-fee-page .pool-hero.pool-hero--centered .pool-hero-copy { margin-top:24px; font-size:18px; }
+  .pool-fee-page .pool-hero.pool-hero--centered .pool-hero-empathy { margin-top:16px; padding-bottom:24px; font-size:18px; }
+}
+</style>
+<style>
+/* Give the introduction a clear lead-paragraph hierarchy. */
+.pool-fee-page .pool-intro-section--brief { padding:40px 0 16px; }
+.pool-fee-page .pool-intro-section--brief .section-lede {
+  max-width:900px;
+  font-size:24px;
+  line-height:1.5;
+  font-weight:400;
+  color:#555;
+  margin:0;
+}
+@media (max-width:767.98px) {
+  .pool-fee-page .pool-intro-section--brief { padding:30px 0 12px; }
+  .pool-fee-page .pool-intro-section--brief .section-lede { font-size:20px; }
+}
+</style>
+<style id="pool-mobile-readiness">
+/* Preserve the supplied Arial body / Bodoni heading system at every size. */
+.pool-fee-page { overflow-x:visible; }
+.pool-fee-page :where(h1,h2,h3,p,li,summary,a) { overflow-wrap:break-word; }
+.pool-fee-page :where(.rates-layout,.rates-content-grid,.next-step-grid,.next-step-support,.steps,.change-grid) > * { min-width:0; }
+.pool-fee-page :where(.btn-pool-primary,.btn-pool-secondary) {
+  max-width:100%; height:auto; min-height:44px; white-space:normal;
+  line-height:1.4; text-align:center;
+}
+.pool-fee-page #rates .fee-example-table { width:100%; table-layout:fixed; }
+.pool-fee-page #rates .fee-example-table th,
+.pool-fee-page #rates .fee-example-table td { white-space:normal; overflow-wrap:anywhere; }
+.pool-fee-page #rates .fee-example-table th:first-child { width:40%; }
+.pool-fee-page #rates .fee-example-table th { font-size:.875rem; line-height:1.4; letter-spacing:.025em; }
+.pool-fee-page #rates .fee-example-table td { font-variant-numeric:tabular-nums; }
+.pool-fee-page #faqs :where(.faq-native-category-summary,.faq-native-question) { min-height:48px; }
+@media (max-width:767.98px) {
+  .pool-fee-page .pool-hero.pool-hero--centered .pool-hero-title { font-size:clamp(2rem,6vw,2.5rem); line-height:1.15; }
+  .pool-fee-page .pool-hero.pool-hero--centered .pool-hero-copy,
+  .pool-fee-page .pool-hero.pool-hero--centered .pool-hero-empathy { font-size:1.125rem; }
+  .pool-fee-page .pool-intro-section--brief .section-lede { font-size:1.25rem; }
+  .pool-fee-page #rates .fee-example-table th { font-size:.875rem; letter-spacing:0; padding:12px 8px; }
+  .pool-fee-page #rates .fee-example-table td { font-size:1rem; line-height:1.5; padding:14px 8px; }
+  .pool-fee-page #rates .fee-example-copy .fee-example-support { font-size:1rem; }
+  .pool-fee-page #rates .fee-example-currency-note { font-size:.9375rem; }
+  .pool-fee-page .next-step-support { grid-template-columns:minmax(0,1fr); }
+  .pool-fee-page .next-step-contact-line a { display:inline-flex; align-items:center; min-height:44px; }
+  .pool-fee-page .next-step-rachel-action { flex-direction:column; align-items:stretch; }
+  .pool-fee-page .next-step-rachel-action .btn-pool-primary { width:100%; min-width:0; }
+  .pool-fee-page #faqs .faq-native-answer { padding-right:0; }
+  .pool-fee-page #faqs .faq-native-category-summary { line-height:1.4; }
+  .pool-fee-page :where(input,select,textarea) { font-size:1rem; max-width:100%; }
+}
+@media (max-width:359.98px) {
+  .pool-fee-page #rates .fee-example-table th:first-child { width:36%; }
+  .pool-fee-page #rates .fee-example-table th,
+  .pool-fee-page #rates .fee-example-table td { padding-left:6px; padding-right:6px; }
+}
+</style>
+<style id="pool-options-paragraph-spacing">
+/* Keep the two introduction paragraphs together without stretched grid rows. */
+.pool-fee-page .next-step-main .section-lede { margin:0; }
+.pool-fee-page .next-step-main .section-lede + .section-lede { margin-top:1rem; }
+.pool-fee-page .next-step-main .next-step-options { margin-top:1.25rem; align-content:start; }
+@media (min-width:1000px) {
+  .pool-fee-page .next-step-main {
+    grid-template-rows:auto auto auto minmax(0,1fr);
+    align-content:stretch;
+  }
+}
+</style>
+<style id="pool-options-simplified-layout">
+/* A compact introduction followed by the two support choices. */
+.pool-fee-page .next-step-grid {
+  grid-template-columns:minmax(0,1fr);
+  grid-template-areas:"main" "note" "support";
+  row-gap:0;
+  align-items:start;
+}
+.pool-fee-page .next-step-main { display:block; }
+.pool-fee-page .next-step-main .section-lede { max-width:900px; }
+.pool-fee-page .next-step-grid > .next-step-fee-note { margin:20px 0 0; max-width:900px; }
+.pool-fee-page .next-step-support {
+  margin-top:28px;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  grid-template-rows:auto;
+  align-items:stretch;
+  gap:24px;
+}
+.pool-fee-page .next-step-contact-card,
+.pool-fee-page .next-step-rachel-card { height:auto; }
+@media (max-width:767.98px) {
+  .pool-fee-page .next-step-support { grid-template-columns:minmax(0,1fr); gap:16px; margin-top:24px; }
+}
+</style>
+<style id="pool-intro-compact-spacing">
+.pool-fee-page .pool-intro-section--brief { padding:24px 0 0; }
+.pool-fee-page .pool-intro-section--brief + #whats-changing { padding-top:28px; }
+@media (max-width:767.98px) {
+  .pool-fee-page .pool-intro-section--brief { padding-top:20px; }
+  .pool-fee-page .pool-intro-section--brief + #whats-changing { padding-top:24px; }
+}
+</style>
+<style id="pool-intro-matched-font-size">
+.pool-fee-page .pool-intro-section--brief .section-lede { font-size:1.2rem; }
+
+/* Reserve equal title space before the desktop timeline paragraphs. */
+@media (min-width:1200px) {
+  .pool-fee-page .timeline-title { min-height:3em; }
+}
+</style>
 </head>
 <body>
 <div class="sticky-promo-container"><!-- move inside main-header if animation to add -->
@@ -9641,32 +9992,33 @@ footer .footer-badges img { object-fit:contain; }
 <main class="pool-fee-page">
 <section class="pool-hero pool-hero--announcement pool-hero--centered">
 <div class="pool-hero-inner">
-<h1 class="pool-hero-title">A few changes are coming to Kitco Pool</h1>
-<div class="pool-hero-date">Starting January 1, 2027</div>
+<h1 class="pool-hero-title">A new Pool Account service fee is coming</h1>
+<p class="pool-hero-empathy">(and we know you’d rather it wasn’t)</p>
+<p class="pool-hero-copy">Starting <span class="pool-hero-effective-date">January 1, 2027</span>, we’re changing how fees work for your Kitco Pool Metal Account.</p>
 </div>
 </section>
-<section class="pool-intro-section">
+<section class="pool-intro-section pool-intro-section--brief">
 <div class="container">
-<h2>A new Pool Account Service Fee <span class="pool-intro-empathy">(and we know you’d rather it wasn’t)</span></h2>
 <p class="section-lede">We know a new fee isn’t something you want to see. So we want to be clear about what’s changing and why.</p>
 </div>
 </section>
 <section class="pool-section" id="whats-changing">
 <div class="container">
+<div class="section-kicker">At a glance</div>
 <h2>What’s changing</h2>
 <div class="change-grid">
 <article class="change-card">
 <div aria-hidden="true" class="change-card-icon change-card-icon--service">
 <svg aria-hidden="true" viewbox="0 0 24 24">
-<rect x="5" y="3" width="14" height="18" rx="2"></rect>
+<rect height="18" rx="2" width="14" x="5" y="3"></rect>
 <path d="M9 8h6"></path>
 <path d="M9 12h6"></path>
 <path d="M9 16h3"></path>
 </svg>
 </div>
 <div>
-<h3>A new annual Pool Account Service Fee</h3>
-<p>Starting January 1, 2027, an annual Pool Account Service Fee will apply based on the value of the metals we hold.</p>
+<h3>A new annual Pool Account service fee</h3>
+<p>Starting January 1, 2027, an annual Pool Account service fee will apply based on the value of the metals we hold.</p>
 <p>There's a $15 annual minimum, and it counts toward your fee for the year. It's not an extra charge.</p>
 </div>
 </article>
@@ -9692,6 +10044,7 @@ footer .footer-badges img { object-fit:contain; }
 <div class="container">
 <div class="why-commitment-panel">
 <div class="why-column">
+<div class="section-kicker">Why now</div>
 <h2>Why we’re making this change</h2>
 <p class="section-lede">For many years, we’ve absorbed the costs associated with operating Pool Accounts, including maintaining and insuring the metal inventory that supports them. As those costs have increased, we can no longer absorb all of them.</p>
 <p>We understand that knowing the reason for a new fee doesn’t make it any easier to pay. We’ve worked to keep the impact as modest as possible while continuing to provide the service, security and flexibility you expect from Kitco.</p>
@@ -9701,19 +10054,19 @@ footer .footer-badges img { object-fit:contain; }
 <h3 class="service-subheading">What isn’t changing</h3>
 <ul class="service-icon-list">
 <li>
-<span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m15 8 4 4-4 4"></path><path d="M9 8 5 12l4 4"></path></svg></span>
+<span aria-hidden="true" class="service-icon"><svg viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m15 8 4 4-4 4"></path><path d="M9 8 5 12l4 4"></path></svg></span>
 <div><strong>Buy, sell and hold as you do today</strong><br/>Your Pool Metal Account will continue to work the same way.</div>
 </li>
 <li>
-<span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v5l3 2"></path></svg></span>
+<span aria-hidden="true" class="service-icon"><svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v5l3 2"></path></svg></span>
 <div><strong>Trade online 24/7</strong><br/>Buy and sell whenever it works for you.</div>
 </li>
 <li>
-<span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8h16"></path><path d="M7 5 4 8l3 3"></path><path d="M20 16H4"></path><path d="m17 13 3 3-3 3"></path></svg></span>
+<span aria-hidden="true" class="service-icon"><svg viewbox="0 0 24 24"><path d="M4 8h16"></path><path d="M7 5 4 8l3 3"></path><path d="M20 16H4"></path><path d="m17 13 3 3-3 3"></path></svg></span>
 <div><strong>Competitive pricing</strong><br/>You’ll continue to benefit from Kitco’s competitive Pool spreads.</div>
 </li>
 <li>
-<span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 19 6v5c0 4.7-2.9 8.1-7 10-4.1-1.9-7-5.3-7-10V6l7-3Z"></path><path d="M9.5 12.2 11.3 14l3.7-4"></path></svg></span>
+<span aria-hidden="true" class="service-icon"><svg viewbox="0 0 24 24"><path d="M12 3 19 6v5c0 4.7-2.9 8.1-7 10-4.1-1.9-7-5.3-7-10V6l7-3Z"></path><path d="M9.5 12.2 11.3 14l3.7-4"></path></svg></span>
 <div><strong>Fully insured metal inventory</strong><br/>The metal inventory supporting Pool Accounts will continue to be fully insured.</div>
 </li>
 </ul>
@@ -9725,8 +10078,9 @@ footer .footer-badges img { object-fit:contain; }
 <div class="container">
 <div class="rates-layout">
 <div class="rates-copy">
-<h2>Annual holding fee rates</h2>
-<p class="section-lede">Starting January 1, 2027, here are the annual holding fee rates for the metal holdings in your Pool Metal Account:</p>
+<div class="section-kicker">The rates</div>
+<h2>Annual service fee rates</h2>
+<p class="section-lede">Starting January 1, 2027, here are the annual service fee rates for the metal holdings in your Pool Metal Account:</p>
 </div>
 <div class="rates-content-grid">
 <div class="rate-table-wrap">
@@ -9741,13 +10095,13 @@ footer .footer-badges img { object-fit:contain; }
 </tbody>
 </table>
 </div>
-<div class="rates-facts" aria-label="Service fee details">
+<div aria-label="Service fee details" class="rates-facts">
 <div class="rates-fact">
-<div class="rates-fact-icon rates-fact-icon--info" aria-hidden="true">i</div>
+<div aria-hidden="true" class="rates-fact-icon rates-fact-icon--info">i</div>
 <div><strong>Calculated daily</strong><p>Your service fee is based on your metal holdings and their value each day.</p></div>
 </div>
 <div class="rates-fact">
-<div class="rates-fact-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M12 7v10"></path><path d="M15 9.5c0-1.1-1.3-2-3-2s-3 .9-3 2 1.3 2 3 2 3 .9 3 2-1.3 2-3 2-3-.9-3-2"></path></svg></div>
+<div aria-hidden="true" class="rates-fact-icon"><svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M12 7v10"></path><path d="M15 9.5c0-1.1-1.3-2-3-2s-3 .9-3 2 1.3 2 3 2 3 .9 3 2-1.3 2-3 2-3-.9-3-2"></path></svg></div>
 <div><strong>$15 annual minimum</strong><p>It counts toward your service fees for the year. It isn’t added on top.</p></div>
 </div>
 </div>
@@ -9764,29 +10118,29 @@ footer .footer-badges img { object-fit:contain; }
 <table class="fee-example-table">
 <thead><tr><th>Value of your holdings</th><th>Gold</th><th>Silver</th></tr></thead>
 <tbody>
-<tr><td>$100,000</td><td>$120/year</td><td>$300/year</td></tr>
-<tr><td>$200,000</td><td>$240/year</td><td>$600/year</td></tr>
-<tr><td>$1,000,000</td><td>$1,200/year</td><td>$3,000/year</td></tr>
+<tr><td>$100,000</td><td>$120/<wbr/>year</td><td>$300/<wbr/>year</td></tr>
+<tr><td>$200,000</td><td>$240/<wbr/>year</td><td>$600/<wbr/>year</td></tr>
+<tr><td>$1,000,000</td><td>$1,200/<wbr/>year</td><td>$3,000/<wbr/>year</td></tr>
 </tbody>
 </table>
 </div>
 <div class="fee-example-currency-note" role="note">
-<span class="fee-example-currency-icon" aria-hidden="true">
-<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 10v6"></path><path d="M12 7h.01"></path></svg>
+<span aria-hidden="true" class="fee-example-currency-icon">
+<svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 10v6"></path><path d="M12 7h.01"></path></svg>
 </span>
 <span>If you’re in the U.S., these amounts and fees are in USD. If you’re in Canada, they’re in CAD.</span>
 </div>
-
 </div>
 </div>
 </section>
 <section class="pool-section" id="how-it-works">
 <div class="container">
+<div class="section-kicker">How it works</div>
 <h2>How your service fee works</h2>
 <div class="steps">
 <article class="step"><div class="step-number">1</div><div><h3>Your daily holdings</h3><p>We look at the type and amount of metals you hold in Pool each day.</p></div></article>
 <article class="step"><div class="step-number">2</div><div><h3>Their daily value</h3><p>We use the daily market price to determine the value of your metal holdings.</p></div></article>
-<article class="step"><div class="step-number">3</div><div><h3>Your holding fee rate</h3><p>We apply the daily portion of the annual holding fee rate for that metal.</p></div></article>
+<article class="step"><div class="step-number">3</div><div><h3>Your service fee rate</h3><p>We apply the daily portion of the annual service fee rate for that metal.</p></div></article>
 <article class="step"><div class="step-number">4</div><div><h3>Your service fee accumulates</h3><p>Those daily amounts add up throughout the year.</p></div></article>
 </div>
 <div class="info-strip"><span class="info-icon"><svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 10v6"></path><path d="M12 7h.01"></path></svg></span><p><strong>Your service fee is based on your metal holdings each day.</strong> Changes in metal prices, as well as any metals you buy or sell in Pool, are reflected in the daily calculation.</p></div>
@@ -9796,18 +10150,19 @@ footer .footer-badges img { object-fit:contain; }
 <article class="timeline-item"><div class="timeline-dot">3</div><div><p class="timeline-date">January 2028</p><p class="timeline-title">Your 2027 service fee is finalized.</p><p>If your total service fee for 2027 is more than the $15 minimum, you’ll receive an invoice for the remaining balance. If it’s $15 or less, there’s nothing more to pay for 2027.</p></div></article>
 </div></div></div>
 </section>
-
 <section class="pool-section" id="payment">
 <div class="container">
+<div class="section-kicker">Payment</div>
 <h2>How you’ll be able to pay</h2>
-<p class="payment-intro">We’ll use your Pool holdings as the default payment method. If you’d rather pay using funds on your account or a credit card, you can choose your preferred payment method before January 15. We’ll automatically collect your $15 annual minimum using the payment method saved to your account.</p>
-<ul class="payment-method-list" aria-label="Ways to pay service fees">
-<li><span class="payment-method-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8l8-4 8 4-8 4-8-4Z"></path><path d="m4 12 8 4 8-4"></path><path d="m4 16 8 4 8-4"></path></svg></span><span>Your Pool holdings</span></li>
-<li><span class="payment-method-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v18"></path><path d="M16.5 7H9.8a3.3 3.3 0 0 0 0 6.6h4.4a3.3 3.3 0 0 1 0 6.6H7.5"></path></svg></span><span>Funds on your account</span></li>
-<li><span class="payment-method-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="M3 10h18"></path></svg></span><span>Credit card</span></li>
+<p class="payment-intro">We’ll use your Pool holdings as the default payment method. If you’d rather pay using funds on your account or a credit card, you can choose your preferred payment method before January 15.</p>
+<p class="payment-intro">We’ll automatically collect your $15 annual minimum using the payment method saved to your account.</p>
+<ul aria-label="Ways to pay service fees" class="payment-method-list">
+<li><span aria-hidden="true" class="payment-method-icon"><svg viewbox="0 0 24 24"><path d="M4 8l8-4 8 4-8 4-8-4Z"></path><path d="m4 12 8 4 8-4"></path><path d="m4 16 8 4 8-4"></path></svg></span><span>Your Pool holdings</span></li>
+<li><span aria-hidden="true" class="payment-method-icon"><svg viewbox="0 0 24 24"><path d="M12 3v18"></path><path d="M16.5 7H9.8a3.3 3.3 0 0 0 0 6.6h4.4a3.3 3.3 0 0 1 0 6.6H7.5"></path></svg></span><span>Funds on your account</span></li>
+<li><span aria-hidden="true" class="payment-method-icon"><svg viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="M3 10h18"></path></svg></span><span>Credit card</span></li>
 </ul>
 <div class="no-action-callout">
-<span class="no-action-callout-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></svg></span>
+<span aria-hidden="true" class="no-action-callout-icon"><svg viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></svg></span>
 <p><strong>There’s nothing you need to do right now.</strong> We’ll be in touch by email before the changes take effect and let you know when you can choose your preferred payment method in your online account.</p>
 </div>
 </div>
@@ -9816,103 +10171,56 @@ footer .footer-badges img { object-fit:contain; }
 <div class="container">
 <div class="section-kicker next-step-kicker">Your options</div>
 <div class="next-step-grid">
-  <div class="next-step-main">
-    <h2>We’re here to help with your next step</h2>
-    <p class="section-lede">There are a few ways you can move forward, and we’re here to help you understand your options. You can keep your metals in your Pool Metal Account, sell your Pool holdings, exchange them for physical metals, or explore other Kitco storage options, including VaultChain™ and Kitco Allocated Storage. If you’re not sure what makes sense for you, our Customer Experience team is here to talk it through.</p>
-    <ul class="next-step-options" aria-label="Pool Metal Account options">
-      <li><span class="next-step-option-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8l8-4 8 4-8 4-8-4Z"></path><path d="m4 12 8 4 8-4"></path><path d="m4 16 8 4 8-4"></path></svg></span><span>Keep your metals in Pool</span></li>
-      <li><span class="next-step-option-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 7h10"></path><path d="m12 4 3 3-3 3"></path><path d="M19 17H9"></path><path d="m12 14-3 3 3 3"></path></svg></span><span>Sell your Pool holdings</span></li>
-      <li><span class="next-step-option-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="7" cy="7" r="3"></circle><rect x="12" y="4" width="7" height="6" rx="1"></rect><path d="M8 16h9"></path><path d="m14 13 3 3-3 3"></path></svg></span><span>Exchange for physical metals</span></li>
-      <li><span class="next-step-option-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 10h16"></path><path d="M6 10V7l6-3 6 3v3"></path><path d="M6 10v8"></path><path d="M18 10v8"></path><path d="M4 18h16"></path></svg></span><span>Explore other Kitco storage options</span></li>
-    </ul>
-  </div>
-
-  <aside class="next-step-support" aria-label="Customer support options">
-    <div class="next-step-contact-card" aria-label="Customer Experience contact details">
-      <h3>Questions? We’re here to help.</h3>
-      <div class="next-step-contact-line">
-        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z"></path></svg>
-        <a href="tel:+18669254826">1 866 925-4826</a>
-      </div>
-      <div class="next-step-contact-line">
-        <svg aria-hidden="true" viewBox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m3 7 9 6 9-6"></path></svg>
-        <a href="mailto:pool@kitco.com">pool@kitco.com</a>
-      </div>
-      <div class="next-step-hours">
-        <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v5l3 2"></path></svg>
-        <div><span class="next-step-hours-label">Hours</span><br/>Mon–Thurs 8:30am–10pm ET<br/>Fri 8:30am–5pm ET</div>
-      </div>
-    </div>
-
-    <div class="next-step-rachel-card" id="support">
-      <div class="next-step-rachel-heading">
-        <img class="rachel-current-icon" src="data:image/png;base64,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" alt="Rachel AI assistant chat icon"/>
-        <div>
-          <div class="section-kicker">Ask our AI assistant</div>
-          <h3>Get an answer in seconds</h3>
-        </div>
-      </div>
-      <p>Our AI assistant Rachel is available 24/7 to help with questions about the new Pool service fees, including how your fee is calculated, what the $15 annual minimum means, and more.</p>
-      <div class="next-step-rachel-action">
-        <span>Ask about <strong>Pool service fees</strong> to get started.</span>
-        <a class="btn btn-pool-primary" href="javascript:void(0)">Let’s Chat</a>
-      </div>
-    </div>
-  </aside>
-  <p class="next-step-fee-note"><span class="next-step-fee-note-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 10v6"></path><path d="M12 7h.01"></path></svg></span><span>Some options may include additional fees. We’re happy to walk you through any costs before you decide what works for you.</span></p>
+<div class="next-step-main">
+<h2>We’re here to help with your next step</h2>
+<p class="section-lede">There are a few ways you can move forward, and we’re here to help you understand your options. You can keep your metals in your Pool Metal Account, sell your Pool holdings, exchange them for physical metals, or explore other Kitco storage options, including VaultChain™ and Kitco Allocated Storage.</p>
+<p class="section-lede">If you’re not sure what makes sense for you, our Customer Experience team is here to talk it through.</p>
+</div>
+<aside aria-label="Customer support options" class="next-step-support">
+<div aria-label="Customer Experience contact details" class="next-step-contact-card">
+<h3>Have questions? Reach out to our team.</h3>
+<div class="next-step-contact-line">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z"></path></svg>
+<a href="tel:+18669254826">1 866 925-4826</a>
+</div>
+<div class="next-step-contact-line">
+<svg aria-hidden="true" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m3 7 9 6 9-6"></path></svg>
+<a href="mailto:pool@kitco.com">pool@kitco.com</a>
+</div>
+<div class="next-step-hours">
+<svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v5l3 2"></path></svg>
+<div><span class="next-step-hours-label">Hours</span><br/>Mon–Thurs 8:30am–10pm ET<br/>Fri 8:30am–5pm ET</div>
+</div>
+</div>
+<div class="next-step-rachel-card" id="support">
+<div class="next-step-rachel-heading">
+<img alt="Rachel AI assistant chat icon" class="rachel-current-icon" src="data:image/png;base64,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"/>
+<div>
+<div class="section-kicker">Ask our AI assistant</div>
+<h3>Get an answer in seconds</h3>
+</div>
+</div>
+<p>Our AI assistant Rachel is available 24/7 to help with questions about the new Pool service fees, including how your fee is calculated, what the $15 annual minimum means, and more.</p>
+<div class="next-step-rachel-action">
+<span>Ask about <strong>Pool service fees</strong> to get started.</span>
+<a class="btn btn-pool-primary" href="javascript:void(0)">Let’s Chat</a>
+</div>
+</div>
+</aside>
+<p class="next-step-fee-note"><span aria-hidden="true" class="next-step-fee-note-icon"><svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 10v6"></path><path d="M12 7h.01"></path></svg></span><span>Some options may include additional fees. We’re happy to walk you through any costs before you decide what works for you.</span></p>
 </div>
 </div>
 </section>
 <section class="pool-section" id="faqs">
 <div class="container">
+<div class="section-kicker">Questions</div>
 <h2>Frequently asked questions</h2>
 <p class="section-lede">Choose a question below to learn more.</p>
 <div class="faq-groups">
-<div class="faq-group">
-<div class="faq-category-header"><span class="faq-category-title">About the changes</span></div>
-<div class="faq-group-panel">
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">Why is Kitco introducing a service fee?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">For many years, we’ve absorbed the costs associated with operating Pool Accounts, including maintaining and insuring the metal inventory that supports them. As those costs have increased, we can no longer absorb all of them. We’ve worked to keep the impact as modest as possible while continuing to provide the service, security and flexibility you expect from Kitco.</div></div></div>
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">When do the new service fees start?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">The new service fees take effect January 1, 2027.</div></div></div>
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">Are Pool transaction fees going away?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">Yes. You’ll no longer pay the $14.99 online or $19.99 phone transaction fee when you buy or sell metals in Pool.</div></div></div>
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">Will anything else change about my Pool Metal Account?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">No. Your Pool Metal Account will continue to work as it does today. You can continue to buy, sell and hold metals, and the metal inventory supporting Pool Accounts will continue to be fully insured.</div></div></div>
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">Do I need to do anything before January 1?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">We’ll keep you updated by email before the changes take effect, including when you can choose your preferred payment method in your online account.</div></div></div>
-</div>
-</div>
-<div class="faq-group">
-<div class="faq-category-header"><span class="faq-category-title">Understanding your service fee</span></div>
-<div class="faq-group-panel">
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">How is my service fee calculated?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">Your service fee is calculated daily based on the type and amount of metals you hold, their daily market value and the annual holding fee rate for each metal. Those daily amounts are added together throughout the year.</div></div></div>
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">What price does Kitco use to determine the value of my metals?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">For gold, silver, platinum and palladium, we use the daily Kitco fix to determine the value of your holdings. Rhodium is valued using its daily market price. <a href="javascript:void(0)">Learn more about the Kitco fix.</a></div></div></div>
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">Will my service fee change if metal prices change?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">Yes. Because your service fee is based on the daily value of your holdings, changes in metal prices will affect the amount that accumulates each day.</div></div></div>
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">What happens if I buy or sell metals in Pool during the year?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">Your service fee adjusts automatically based on what you actually hold each day. If you buy more, those holdings are included from that point forward. If you sell, you stop accumulating service fees on the metals you no longer hold.</div></div></div>
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">What if I hold more than one metal?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">Each metal is calculated using its applicable holding fee rate. The daily amounts are then combined as part of your total service fee.</div></div></div>
-</div>
-</div>
-<div class="faq-group">
-<div class="faq-category-header"><span class="faq-category-title">Understanding the $15 annual minimum</span></div>
-<div class="faq-group-panel">
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">Is the $15 minimum added on top of my service fee?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">No. The $15 minimum counts toward your service fees for the year. It isn’t an additional fee on top.</div></div></div>
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">Is the $15 minimum charged for each metal I hold?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">No. It’s one $15 annual minimum per Pool Metal Account, even if you hold more than one metal.</div></div></div>
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">What if my service fees are less than $15 for the year?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">The $15 annual minimum still applies, but you won’t owe anything more for that year.</div></div></div>
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">What if my service fees are more than $15?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">The $15 you’ve already paid is applied toward your total service fees. You’ll only be invoiced for the remaining balance.</div></div></div>
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">What happens if I sell all my Pool holdings during the year?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">Your service fees stop accumulating once you no longer hold metals in Pool. The $15 annual minimum isn’t prorated or refunded if you sell all your Pool holdings during the year.</div></div></div>
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">What if I don’t have any Pool holdings?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">If you don’t hold any metals in Pool, the $15 annual minimum does not apply.</div></div></div></div>
-</div>
-<div class="faq-group">
-<div class="faq-category-header"><span class="faq-category-title">Billing and payment</span></div>
-<div class="faq-group-panel">
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">When will I receive my first invoice?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">You’ll receive an invoice for the $15 annual minimum on January 1, 2027. That amount counts toward your service fees for 2027.</div></div></div>
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">Do I need to pay my January invoice manually?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">No. We’ll automatically collect the $15 annual minimum on January 15 using the preferred payment method saved to your account. Your Pool holdings will be the default payment method, but you can change it to funds on your account or a credit card before January 15.</div></div></div>
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">How will I know how much my service fees are during the year?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">We’ll provide quarterly updates throughout 2027 showing how your service fees are accumulating. We’ll email you when each update is available in your account.</div></div></div>
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">Do I need to pay anything when I receive a quarterly update?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">No. The quarterly updates are just to keep you informed. There’s nothing to pay at that time.</div></div></div>
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">When will I pay any service fees above the $15 minimum?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">After the end of 2027, we’ll finalize your service fee for the year. If it’s more than the $15 minimum you already paid, you’ll receive an invoice in January 2028 for the remaining balance.</div></div></div>
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">How can I pay my service fees?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">We’ll use your Pool holdings as the default payment method. If you’d rather pay using funds on your account or a credit card, you can choose your preferred payment method before January 15. We’ll automatically collect payment using the method saved to your account.</div></div></div>
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">If I use my Pool holdings to pay, which metal will be used?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">If you hold more than one metal in Pool, we’ll take a proportional amount from each of your metals to cover the service fee.</div></div></div>
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">What currency is the $15 annual minimum charged in?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">The annual minimum is $15 CAD for CAD accounts and $15 USD for USD accounts. If your account is in another currency, such as EUR or GBP, we’ll convert the fee to USD when it’s charged.</div></div></div>
-<div class="faq-item"><button aria-expanded="false" class="accordion-button collapsed">Are taxes charged on Pool service fees?</button><div class="accordion-collapse" hidden=""><div class="accordion-body">Yes. Because Kitco Pool services are provided from Quebec, GST and Quebec sales tax (QST) apply to the $15 annual minimum and any additional service fees. The combined tax rate is 14.975%: 5% GST and 9.975% QST.</div></div></div>
-</div>
-</div>
-
+<details class="faq-group faq-native-group"><summary class="faq-native-category-summary"><span class="faq-category-title">About the changes</span></summary><div class="faq-native-group-panel"><details class="faq-native-item"><summary class="faq-native-question">Why is Kitco introducing a service fee?</summary><div class="faq-native-answer">For many years, we’ve absorbed the costs associated with operating Pool Accounts, including maintaining and insuring the metal inventory that supports them. As those costs have increased, we can no longer absorb all of them. We’ve worked to keep the impact as modest as possible while continuing to provide the service, security and flexibility you expect from Kitco.</div></details><details class="faq-native-item"><summary class="faq-native-question">When do the new service fees start?</summary><div class="faq-native-answer">The new service fees take effect January 1, 2027.</div></details><details class="faq-native-item"><summary class="faq-native-question">Are Pool transaction fees going away?</summary><div class="faq-native-answer">Yes. You’ll no longer pay the $14.99 online or $19.99 phone transaction fee when you buy or sell metals in Pool.</div></details><details class="faq-native-item"><summary class="faq-native-question">Will anything else change about my Pool Metal Account?</summary><div class="faq-native-answer">No. Your Pool Metal Account will continue to work as it does today. You can continue to buy, sell and hold metals, and the metal inventory supporting Pool Accounts will continue to be fully insured.</div></details><details class="faq-native-item"><summary class="faq-native-question">Do I need to do anything before January 1?</summary><div class="faq-native-answer">We’ll keep you updated by email before the changes take effect, including when you can choose your preferred payment method in your online account.</div></details></div></details>
+<details class="faq-group faq-native-group"><summary class="faq-native-category-summary"><span class="faq-category-title">Understanding your service fee</span></summary><div class="faq-native-group-panel"><details class="faq-native-item"><summary class="faq-native-question">How is my service fee calculated?</summary><div class="faq-native-answer">Your service fee is calculated daily based on the type and amount of metals you hold, their daily market value and the annual service fee rate for each metal. Those daily amounts are added together throughout the year.</div></details><details class="faq-native-item"><summary class="faq-native-question">What price does Kitco use to determine the value of my metals?</summary><div class="faq-native-answer">For gold, silver, platinum and palladium, we use the daily Kitco fix to determine the value of your holdings. Rhodium is valued using its daily market price. <a href="javascript:void(0)">Learn more about the Kitco fix.</a></div></details><details class="faq-native-item"><summary class="faq-native-question">Will my service fee change if metal prices change?</summary><div class="faq-native-answer">Yes. Because your service fee is based on the daily value of your holdings, changes in metal prices will affect the amount that accumulates each day.</div></details><details class="faq-native-item"><summary class="faq-native-question">What happens if I buy or sell metals in Pool during the year?</summary><div class="faq-native-answer">Your service fee adjusts automatically based on what you actually hold each day. If you buy more, those holdings are included from that point forward. If you sell, you stop accumulating service fees on the metals you no longer hold.</div></details><details class="faq-native-item"><summary class="faq-native-question">What if I hold more than one metal?</summary><div class="faq-native-answer">Each metal is calculated using its applicable service fee rate. The daily amounts are then combined as part of your total service fee.</div></details></div></details>
+<details class="faq-group faq-native-group"><summary class="faq-native-category-summary"><span class="faq-category-title">Understanding the $15 annual minimum</span></summary><div class="faq-native-group-panel"><details class="faq-native-item"><summary class="faq-native-question">Is the $15 minimum added on top of my service fee?</summary><div class="faq-native-answer">No. The $15 minimum counts toward your service fees for the year. It isn’t an additional fee on top.</div></details><details class="faq-native-item"><summary class="faq-native-question">Is the $15 minimum charged for each metal I hold?</summary><div class="faq-native-answer">No. It’s one $15 annual minimum per Pool Metal Account, even if you hold more than one metal.</div></details><details class="faq-native-item"><summary class="faq-native-question">What if my service fees are less than $15 for the year?</summary><div class="faq-native-answer">The $15 annual minimum still applies, but you won’t owe anything more for that year.</div></details><details class="faq-native-item"><summary class="faq-native-question">What if my service fees are more than $15?</summary><div class="faq-native-answer">The $15 you’ve already paid is applied toward your total service fees. You’ll only be invoiced for the remaining balance.</div></details><details class="faq-native-item"><summary class="faq-native-question">What happens if I sell all my Pool holdings during the year?</summary><div class="faq-native-answer">Your service fees stop accumulating once you no longer hold metals in Pool. The $15 annual minimum isn’t prorated or refunded if you sell all your Pool holdings during the year.</div></details><details class="faq-native-item"><summary class="faq-native-question">What if I don’t have any Pool holdings?</summary><div class="faq-native-answer">If you don’t hold any metals in Pool, the $15 annual minimum does not apply.</div></details></div></details>
+<details class="faq-group faq-native-group"><summary class="faq-native-category-summary"><span class="faq-category-title">Billing and payment</span></summary><div class="faq-native-group-panel"><details class="faq-native-item"><summary class="faq-native-question">When will I receive my first invoice?</summary><div class="faq-native-answer">You’ll receive an invoice for the $15 annual minimum on January 1, 2027. That amount counts toward your service fees for 2027.</div></details><details class="faq-native-item"><summary class="faq-native-question">Do I need to pay my January invoice manually?</summary><div class="faq-native-answer">No. We’ll automatically collect the $15 annual minimum on January 15 using the preferred payment method saved to your account. Your Pool holdings will be the default payment method, but you can change it to funds on your account or a credit card before January 15.</div></details><details class="faq-native-item"><summary class="faq-native-question">How will I know how much my service fees are during the year?</summary><div class="faq-native-answer">We’ll provide quarterly updates throughout 2027 showing how your service fees are accumulating. We’ll email you when each update is available in your account.</div></details><details class="faq-native-item"><summary class="faq-native-question">Do I need to pay anything when I receive a quarterly update?</summary><div class="faq-native-answer">No. The quarterly updates are just to keep you informed. There’s nothing to pay at that time.</div></details><details class="faq-native-item"><summary class="faq-native-question">When will I pay any service fees above the $15 minimum?</summary><div class="faq-native-answer">After the end of 2027, we’ll finalize your service fee for the year. If it’s more than the $15 minimum you already paid, you’ll receive an invoice in January 2028 for the remaining balance.</div></details><details class="faq-native-item"><summary class="faq-native-question">How can I pay my service fees?</summary><div class="faq-native-answer">We’ll use your Pool holdings as the default payment method. If you’d rather pay using funds on your account or a credit card, you can choose your preferred payment method before January 15. We’ll automatically collect payment using the method saved to your account.</div></details><details class="faq-native-item"><summary class="faq-native-question">If I use my Pool holdings to pay, which metal will be used?</summary><div class="faq-native-answer">If you hold more than one metal in Pool, we’ll take a proportional amount from each of your metals to cover the service fee.</div></details><details class="faq-native-item"><summary class="faq-native-question">What currency is the $15 annual minimum charged in?</summary><div class="faq-native-answer">The annual minimum is $15 CAD for CAD accounts and $15 USD for USD accounts. If your account is in another currency, such as EUR or GBP, we’ll convert the fee to USD when it’s charged.</div></details><details class="faq-native-item"><summary class="faq-native-question">Are taxes charged on Pool service fees?</summary><div class="faq-native-answer">Yes. Because Kitco Pool services are provided from Quebec, GST and Quebec sales tax (QST) apply to the $15 annual minimum and any additional service fees. The combined tax rate is 14.975%: 5% GST and 9.975% QST.</div></details></div></details>
 <!-- Transition page for existing customers; new-account/partial-year treatment intentionally omitted. --></div>
 </div>
 </section>
@@ -10344,16 +10652,32 @@ footer .footer-badges img { object-fit:contain; }
 </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- FAQ interactions use Bootstrap Collapse for reliable desktop and mobile behavior. -->
+
 <script>
-document.querySelectorAll('.pool-fee-page .faq-item .accordion-button').forEach(function(btn){
-  btn.addEventListener('click',function(){
-    var panel=btn.nextElementSibling;
-    var open=btn.getAttribute('aria-expanded')==='true';
-    btn.setAttribute('aria-expanded',String(!open));
-    btn.classList.toggle('collapsed',open);
-    panel.hidden=open;
-  });
-});
+/* Align timeline paragraphs to the tallest title at the current width. */
+(function () {
+  const timeline = document.querySelector('.pool-fee-page .timeline');
+  if (!timeline) return;
+  const titles = Array.from(timeline.querySelectorAll('.timeline-title'));
+  let pending;
+  function alignTimeline() {
+    titles.forEach(function (title) { title.style.height = ''; });
+    if (!window.matchMedia('(min-width:1200px)').matches) return;
+    const height = Math.max.apply(null, titles.map(function (title) {
+      return title.getBoundingClientRect().height;
+    }));
+    titles.forEach(function (title) { title.style.height = height + 'px'; });
+  }
+  function scheduleAlignment() {
+    cancelAnimationFrame(pending);
+    pending = requestAnimationFrame(alignTimeline);
+  }
+  alignTimeline();
+  window.addEventListener('load', scheduleAlignment);
+  window.addEventListener('resize', scheduleAlignment);
+  if (document.fonts) document.fonts.ready.then(scheduleAlignment);
+})();
 </script>
 </body>
 </html>
